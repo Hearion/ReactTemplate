@@ -1,0 +1,179 @@
+$grid-gutter-width: 20px; // 间距
+$grid-columns: 24; //列数
+$screen-md: 1440px; //中屏尺寸
+$screen-lg: 1920px; //大屏尺寸
+
+// 默认为小屏尺寸，定义了2个尺寸
+
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-right: calc(#{$gutter}/ -2);
+  margin-left: calc(#{$gutter} / -2);
+  @include clearfix;
+}
+
+// 生成col
+@mixin make-grid-columns($i: 1, $list: ".col-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    position: relative;
+    min-height: 1px;
+    padding-right: calc(#{$grid-gutter-width} / 2);
+    padding-left: calc(#{$grid-gutter-width} / 2);
+    box-sizing: border-box;
+  }
+}
+
+// col 浮动
+@mixin float-grid-columns-default($i: 1, $list: ".col-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-#{$i}";
+  }
+  #{$list} {
+    float: left;
+  }
+}
+
+@mixin float-grid-columns($class, $i: 1, $list: ".col-#{$class}-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-#{$class}-#{$i}";
+  }
+  #{$list} {
+    float: left;
+  }
+}
+
+@mixin calc-grid-column-default($index, $type) {
+  @if ($type == width) and ($index > 0) {
+    .col-#{$index} {
+      width: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == push) and ($index > 0) {
+    .col-push-#{$index} {
+      left: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == push) and ($index == 0) {
+    .col-push-0 {
+      left: auto;
+    }
+  }
+  @if ($type == pull) and ($index > 0) {
+    .col-pull-#{$index} {
+      right: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == pull) and ($index == 0) {
+    .col-pull-0 {
+      right: auto;
+    }
+  }
+  @if ($type == offset) {
+    .col-offset-#{$index} {
+      margin-left: percentage(($index / $grid-columns));
+    }
+  }
+}
+
+@mixin calc-grid-column($index, $class, $type) {
+  @if ($type == width) and ($index > 0) {
+    .col-#{$class}-#{$index} {
+      width: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == push) and ($index > 0) {
+    .col-#{$class}-push-#{$index} {
+      left: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == push) and ($index == 0) {
+    .col-#{$class}-push-0 {
+      left: auto;
+    }
+  }
+  @if ($type == pull) and ($index > 0) {
+    .col-#{$class}-pull-#{$index} {
+      right: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == pull) and ($index == 0) {
+    .col-#{$class}-pull-0 {
+      right: auto;
+    }
+  }
+  @if ($type == offset) {
+    .col-#{$class}-offset-#{$index} {
+      margin-left: percentage(($index / $grid-columns));
+    }
+  }
+}
+
+@mixin loop-grid-columns-default($columns, $type) {
+  @for $i from 0 through $columns {
+    @include calc-grid-column-default($i, $type);
+  }
+}
+
+@mixin loop-grid-columns($columns, $class, $type) {
+  @for $i from 0 through $columns {
+    @include calc-grid-column($i, $class, $type);
+  }
+}
+
+@mixin make-grid-default() {
+  @include float-grid-columns-default();
+  @include loop-grid-columns-default($grid-columns, width);
+  // @include loop-grid-columns-default($grid-columns, pull);
+  // @include loop-grid-columns-default($grid-columns, push);
+  @include loop-grid-columns-default($grid-columns, offset);
+}
+
+@mixin make-grid($class) {
+  @include float-grid-columns($class);
+  @include loop-grid-columns($grid-columns, $class, width);
+  // @include loop-grid-columns($grid-columns, $class, pull);
+  // @include loop-grid-columns($grid-columns, $class, push);
+  @include loop-grid-columns($grid-columns, $class, offset);
+}
+
+
+
+/* grid */ 
+.container{
+  padding-right: calc(#{$grid-gutter-width} / 2);
+  padding-left: calc(#{$grid-gutter-width} / 2);
+  margin-right: auto;
+  margin-left: auto;
+  @include clearfix;
+}
+
+// 行 - 默认带间隔
+.row {
+  @include make-row;
+}
+
+// 无间隔
+.row-no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@include make-grid-columns;
+
+@include make-grid-default;
+
+@media (min-width: $screen-md) {
+  @include make-grid(md);
+}
+
+@media (min-width: $screen-lg) {
+  @include make-grid(lg);
+}
+

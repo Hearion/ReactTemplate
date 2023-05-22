@@ -1,0 +1,67 @@
+@charset "UTF-8";
+//input外框
+.input-wrap{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    .icon{
+      position: absolute;
+      top: 1px;
+      bottom: 0;
+      text-align: center;
+      width: $height-form;
+      line-height: $height-form;
+      color: $color-lighter;
+      cursor: pointer;
+    }
+    &.input-wrap-error{
+      .layui-input{
+        color: $color-error;
+        border-color: $color-error;
+      }
+      .icon{
+        color: $color-error;
+      }
+    }
+    .layui-input{
+      display: block;
+    }
+    //添加前置图标
+    &.input-wrap-prefix{
+      .icon{
+        left: 0;
+        padding-left: 5px;
+      }
+      .layui-input{
+        padding-left: $height-form;
+      }
+    }
+    // 添加后置图标
+    &.input-wrap-suffix{
+      .icon{
+        right: 0;
+        padding-right: 5px;
+      }
+      .layui-input{
+        padding-right: $height-form;
+      }
+    }
+    &.input-wrap-sm.input-wrap-suffix{
+      .icon{
+        width: $height-form-sm;
+        line-height: $height-form-sm;
+      }
+      .layui-input{
+        padding-right: $height-form-sm + 2px;
+      }
+    }
+    &.input-wrap-lg{
+      .icon{
+        width: $height-form-lg;
+        line-height: $height-form-lg;
+      }
+      .layui-input{
+        padding-right: $height-form-lg;
+      }
+    }
+  }

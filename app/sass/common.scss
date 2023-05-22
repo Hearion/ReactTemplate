@@ -1,0 +1,142 @@
+@charset "UTF-8";
+// .editTextColor{
+//     color: $color-primary;
+//     cursor: pointer;
+// }
+/*删除文字颜色*/
+// .delTextColor {
+//     cursor: pointer;
+//     color: #F53F3F;
+// }
+/*禁止修改文字颜色*/
+// .disableTextColor {
+//     cursor: no-drop;
+//     color: #a9adb3;
+// }
+/*更多文字颜色*/
+// .moreTextColor {
+//     cursor: pointer;
+//     color: #FF7D00;
+// }
+.statusMinus{
+    display: inline-block;
+    padding: 0 8px 0 28px;
+    height: 22px;
+    line-height: 22px;
+    background: #E3E3E3;
+    color: #B1B1B1;
+    border-radius: 3px;
+    position: relative;
+    font-size: 13px;
+}
+.statusMinus::before{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../assets/img/minus.png') center center;
+    background-size: 100% 100%;
+}
+.statusOk{
+    display: inline-block;
+    padding: 0 8px 0 28px;
+    height: 22px;
+    line-height: 22px;
+    background: #E8FFEA;
+    color: #00B42A;
+    border-radius: 3px;
+    position: relative;
+    font-size: 13px;
+}
+.statusOk::before{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../assets/img/ok-filling.png') center center;
+    background-size: 100% 100%;
+}
+.statusNo{
+    display: inline-block;
+    padding: 0 8px 0 28px;
+    height: 22px;
+    line-height: 22px;
+    background: #FFECE8;
+    color: #F53F3F;
+    border-radius: 3px;
+    position: relative;
+    font-size: 13px;
+
+}
+.statusNo::before{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../assets/img/no-filling.png') center center;
+    background-size: 100% 100%;
+}
+.statusLoad{
+    display: block;
+    padding: 0 8px 0 28px;
+    height: 22px;
+    line-height: 22px;
+    background: #FFF3D4;
+    color: #FBB500;
+    border-radius: 3px;
+    position: relative;
+    font-size: 13px;
+}
+.statusLoad::before{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../assets/img/load-filling.png') center center;
+    background-size: 100% 100%;
+}
+.delTag{
+    background: #F5F7F9;
+    box-shadow: 0px 1px 5px 1px rgba(56, 56, 56, 0.24);
+    border-radius: 4px;
+    border: 1px solid $color-primary;
+    display:inline-block;
+    font-weight: 600;
+    color: $color-primary;
+    line-height: 22px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.evaBaseColor{
+    color: $color-lighter;
+    line-height:22px;
+    font-size:16px;
+}
+
+.evaBaseValueColor{
+    color: $color;
+    line-height:22px;
+    font-size:16px;
+}
+
+.table-text .ant-form-item{
+    margin-bottom: 0px !important;
+}
+// .ant-form-item{
+//     margin-bottom: 0px !important;
+// }

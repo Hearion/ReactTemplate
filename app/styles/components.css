@@ -1,0 +1,64 @@
+
+#app {
+    height: 100%;
+}
+.nav-box .ant-menu{
+    justify-content: start;
+}
+.sidebar-menu .ant-menu.ant-menu-inline-collapsed{
+    width: 70px;
+}
+.ant-form-item{
+    /* height: 36px;
+    margin: 0 0 24px; */
+}
+.ant-spin-nested-loading,.ant-spin-container{
+    height: 100%;
+}
+.selectedTableStyle{
+    background-color: #E1F4FF;
+}
+.ant-table-thead > tr:hover > td,
+.ant-table-tbody > tr:hover > td {
+    background: rgb(225, 244, 255, 0.7) !important;
+}
+
+.tableAlignCenter,.tableAlignCenter>span{
+    text-align: center ! important;
+}
+
+.background-DE{
+    background-color: #DEDEDE;
+}
+.site-tree-search-value {
+    color: #f50;
+}
+.ant-tree-show-line .ant-tree-switcher{
+    background-color: transparent;
+}
+
+.overflowHidden {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.ant-table-tbody>tr.ant-table-row-selected>td{
+    background-color: transparent !important;
+}
+
+.list-groupEva {
+    width: 624px !important;
+}
+.titleBorderLeft {
+    border-left: 3px solid #1890ff;
+    padding-left: 15px;
+    font-size: 16px;
+    margin: 15px 0;
+}
+.clssTree .ant-tree{
+    background-color: transparent;
+}
+.ant-tree-list-scrollbar-show{
+    display: block !important;
+}

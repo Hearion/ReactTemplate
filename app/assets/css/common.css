@@ -1,0 +1,159 @@
+* {
+    font-family: "Noto Sans SC" !important;
+    font-size: 14px;
+}
+
+html, body, #app {
+    display: flex;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+
+.minWidthAuto{
+    overflow-x: auto;
+    min-width: 1000px;
+}
+.minWidthAuto::-webkit-scrollbar{display:none}
+
+.center{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.right{
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+    padding-right:10%;
+}
+.centerBetween{
+    align-items: center;
+    justify-content:space-between;
+}
+
+.flexRow{
+    display:flex;
+    flex-direction: row;
+}
+
+.flexColumn{
+    display:flex;
+    flex-direction: column;
+}
+
+.tableAlignCenter,.tableAlignCenter>span{
+    text-align: center ! important;
+}
+.serialNoAlignCenter,.serialNoAlignCenter>span{
+    text-align: center ! important;
+    border-left: 4px solid #2b5182;
+}
+
+
+.selectedTableStyle{
+    background-color: #E1F4FF;
+}
+.selectedTableStyle td{
+    background-color: #E1F4FF !important;
+}
+
+/* label, text {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #454545;
+} */
+
+.middleBg {
+    background: url("../img/middleImg.png") center center no-repeat;
+    background-size: 100% 100%;
+    flex-flow: column;
+}
+
+.middleHover {
+    width: 100px;
+    height: 30px;
+    border:1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.middleHover:hover {
+    width: 106px;
+    height: 33px;
+    border:2px solid #fff;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.organItem{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.organItem .ant-upload.ant-upload-select{
+    width: 100%;
+    padding-left: 12px;
+}
+.organItem .ant-upload{
+    width: 100%;
+    display: inline-block;
+}
+
+.ant-tabs-tab-btn{
+    font-size: 14px !important;
+    writing-mode:lr-tb !important
+}
+
+.codeTag {
+    word-break: break-word;
+    border-radius: 2px;
+    overflow-x: auto;
+    background-color: #fff5f5;
+    color: #ff502c;
+    font-size: .87em;
+    padding: .065em .4em;
+}
+/* 失败 */
+.circular-2:before{
+    content:'';
+    width: 5px;
+    height: 5px;
+    border-radius:50%;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-color: #F53F3F;
+}
+/* 成功 */
+.circular-0:before{
+    content:'';
+    width: 6px;
+    height: 6px;
+    border-radius:50%;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-color: #67C23A;
+}
+/* 等待 */
+.circular-1:before{
+    content:'';
+    width: 5px;
+    height: 5px;
+    border-radius:50%;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-color: #FF7D00;
+}

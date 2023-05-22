@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* header */
+$headbg: #222632;
+$headHeight: 60px;
+$avatarHeight: 34px;
+.header {
+  // height: $headHeight;
+  background-color: $headbg;
+  // color: #fff;
+  // flex-shrink: 0;
+}
+.zsh-header{
+  background-color: #F5F5F5;
+}
+.logo {
+  float: left;
+  margin: #{($headHeight - $avatarHeight)/2} 0 0px 30px;
+  height: $avatarHeight;
+  line-height: $avatarHeight;
+  font-size: $size-blg;
+  @extend .text-bold;
+  user-select: none;
+  color: #fff;
+}
+
+.header-right {
+  float: right;
+  height: $headHeight;
+}
+
+.header-user {
+  float: right;
+  position: relative;
+
+  .header-user-hd {
+    height: $headHeight;
+    padding: #{($headHeight - $avatarHeight)/2} 10px 0px 20px;
+    line-height: $avatarHeight;
+    cursor: pointer;
+
+    .user-avatar {
+      float: left;
+      height: $avatarHeight;
+      line-height: $avatarHeight;
+    }
+
+    .user-name {
+      float: left;
+      height: $avatarHeight;
+      line-height: $avatarHeight;
+      margin: 0 5px 0 14px;
+    }
+
+    .icon-caret-down {
+      font-size: 16px;
+    }
+  }
+  &:hover {
+    .header-user-bd {
+      display: block;
+    }
+  }
+  .header-user-bd {
+    position: absolute;
+    right: 10px;
+    top: 100%;
+    padding: 10px 0;
+    min-width: 110px;
+    display: none;
+    z-index: 900;
+    margin-top: -10px;
+  }
+  .user-cont {
+    border: 1px solid #EEEFF3;
+    background: #FFFFFF;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.06);
+    padding: 3px 0;
+    line-height: 30px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      right: 35%;
+      margin-right: -6px;
+      @include arrow(top, 6px, #EEEFF3);
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: 35%;
+      margin-right: -6px;
+      @include arrow(top, 6px, #fff);
+      z-index: 10;
+    }
+
+    .user-list {
+      li {
+        line-height: 20px;
+        padding: 5px $num;
+        color: $color;
+      }
+
+      a {
+        display: inline-block;
+        white-space: nowrap;
+        color: $color-light;
+        transition: .3s linear color;
+
+        .icon {
+          margin-right: 7px;
+          color: $color-lighter;
+        }
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

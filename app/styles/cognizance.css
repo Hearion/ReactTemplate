@@ -1,0 +1,25 @@
+.listCard {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 15px;
+    /*transition: all .3s;*/
+    cursor: pointer;
+}
+
+.SelectListCard {
+    width: 100%;
+    border: 2px solid #2b85e4;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px #e1e1e1;
+    transition: transform .3s;
+}
+
+.topCard:hover {
+    background: rgba(240, 240, 240, 1);
+}

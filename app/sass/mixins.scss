@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+// 清除浮动
+@mixin clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// 省略号
+@mixin ellipsis($line:1){
+  @if $line==1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// 箭头  arrow(direction,size,color);
+@mixin arrow($direction,$size,$color) {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: $size;
+  cursor: pointer;
+  @if $direction == top {
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent $color transparent;
+    border-top: none;
+  }
+  @else if $direction == bottom {
+    border-style: solid dashed dashed dashed;
+    border-color: $color transparent transparent transparent;
+    border-bottom: none;
+  }
+  @else if $direction == right {
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent $color;
+    border-right: none;
+  }
+  @else if $direction == left {
+    border-style: dashed solid dashed dashed;
+    border-color: transparent $color transparent transparent;
+    border-left: none;
+  }
+}
+
+// retina背景图
+// @mixin bgimage($image){
+//   background: url('../images/' + $image + '.png');
+//   background-image: -webkit-image-set(url('../images/' + $image + '.png') 1x,url('../images/' + $image + '@2x' + '.png') 2x);
+//   background-image: image-set(url('../images/' + $image + '.png') 1x,url('../images/' + $image + '@2x' + '.png') 2x);
+// }
+
+// 自定义滚动条
+@mixin scroll-bar($width:8px, $outColor: transparent, $innerColor:rgba($color-primary,.4), ) {
+  $--scrollbar-thumb-background: $innerColor;
+  $--scrollbar-track-background: $outColor;
+
+  &::-webkit-scrollbar {
+    z-index: 11;
+    width: $width;
+
+    &:horizontal {
+      height: $width;
+    }
+
+    &-thumb {
+      border-radius: $width;
+      width: $width;
+      background: $--scrollbar-thumb-background;
+    }
+
+    &-corner {
+      background: $--scrollbar-track-background;
+    }
+
+    &-track {
+      background: $--scrollbar-track-background;
+
+      &-piece {
+        background: $--scrollbar-track-background;
+        width: $width;
+      }
+    }
+  }
+}
+
+// 文字阴影
+@mixin text-shadow(){
+  text-shadow: 0 2px 4px rgba(0,0,0,.15);
+}
+
+//盒阴影
+@mixin shadow(){
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+}
+
+// border
+@mixin border(){
+  border: 1px solid $color-border;
+}
+
+// radius
+@mixin radius(){
+  border-radius: $radius;
+}
+
+@mixin radius-sm(){
+  border-radius: $radius-sm;
+}
+
+@mixin radius-lg(){
+  border-radius: $radius-lg;
+}

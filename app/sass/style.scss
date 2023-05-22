@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "variables"; //变量
+@import "reset";//初始化
+@import "mixins";//宏
+@import "grid"; //删格系统
+@import "antd-ui"; //宏
+@import "forms";//form控件
+@import "header";//头部
+@import "nav";//导航
+@import "footer";//底部
+@import "sidebar"; //侧边栏
+@import "pages"; //布局-页面
+@import "modules";//布局-页面
+@import "animate";//动画
+@import "common";//动画
+@import "examScoringMangent";
+@import "resourceCenter";
+@import "standardMangementModal";
+@import "pagingTest"; // 试题分页
+@import "./pageScss/infoMange.scss";

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="7px" viewBox="0 0 60 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="备案设置-审核设置-增量备案" transform="translate(-1619.000000, -386.000000)" fill="#2B5182" fill-rule="nonzero">
+            <path d="M1673,389.092784 L1673,390.123711 L1619,390.123711 L1619,389.092784 L1673,389.092784 Z M1676,392.185567 C1677.65685,392.185567 1679,390.800881 1679,389.092784 C1679,387.384686 1677.65685,386 1676,386 C1674.34315,386 1673,387.384686 1673,389.092784 C1673,390.800881 1674.34315,392.185567 1676,392.185567 Z" id="arrow"></path>
+        </g>
+    </g>
+</svg>

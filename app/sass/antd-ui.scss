@@ -1,0 +1,237 @@
+@charset "UTF-8";
+//关于其他ant库中，less文件的修改：修改了主题色。
+
+.ant-table-tbody>tr>td {
+    border-color: #FAF8F8;
+    padding-left: 8px;
+}
+
+.table-list {
+    .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan]):before {
+        background-color: transparent;
+    }
+}
+//modal
+.ant-modal-title{
+    color: $color-primary;
+}
+.ant-modal-close{
+    color: $color-primary;
+}
+.modal{
+    .ant-modal-header{
+        background-color: rgba(234,238,243,1);
+    }
+    .modal-sub-tit{
+        text-align: center;
+    }
+    .ant-modal-footer{
+        text-align: center;
+        border-top-color: transparent;
+        padding-bottom: 26px;
+        .ant-btn{
+            margin-right: $num;
+        }
+    }
+}
+//分页
+.section-area{
+    .ant-table-pagination.ant-pagination {
+        margin-top: 20px;
+    }
+}
+.ant-table-pagination.ant-pagination {
+    margin-top: 20px;
+}
+.title .ant-btn{
+    display: flex;
+    align-items: center;
+    padding: 6px 15px 4px 15px;
+    // padding: 5px 0px 4px 7px;
+}
+.ant-input-group-addon .ant-btn{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+// .ant-pagination {
+    // .ant-pagination-item,
+    // .ant-pagination-total-text {
+    //     height: 24px;
+    //     line-height: 22px;
+    //     min-width: 24px;
+    // }
+
+    // .ant-pagination-jump-next,
+    // .ant-pagination-jump-prev,
+    // .ant-pagination-next,
+    // .ant-pagination-prev {
+    //     height: 24px;
+    //     line-height: 22px;
+    //     min-width: 24px;
+    // }
+
+    // .ant-pagination-next .ant-pagination-item-link,
+    // .ant-pagination-prev .ant-pagination-item-link {
+    //     // border-color: transparent;
+    // }
+
+    // .ant-pagination-item-active {
+    //     border-color: $color-third;
+    // }
+
+    // // 每页几条
+    // .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+    // .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+    // .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+    //     height: 24px;
+    //     line-height: 22px;
+    //     min-width: 24px;
+    // }
+
+    // .ant-pagination-options-quick-jumper,
+    // .ant-pagination-options-quick-jumper input {
+    //     height: 24px;
+    //     line-height: 22px;
+    //     min-width: 24px;
+    // }
+// }
+
+//按钮图标文字间距
+.ant-btn>.anticon+span,
+.ant-btn>span+.anticon {
+    margin-left: 6px;
+}
+.ant-btn>span{
+    position: relative;
+    top: -0.7px;
+}
+.ant-btn-white {
+    color: $color-dark;
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.ant-btn-text-primary {
+    color: $color-primary;
+    background-color: #fff;
+    border-color: $color-border;
+}
+.ant-radio-group .ant-radio-button-wrapper-checked {
+    @extend .text-bold;
+}
+// 添加了成功警告两种按钮。
+.ant-btn-warning {
+    border-color: $color-warning;
+    color: $color-warning;
+
+    &:hover {
+        border-color: rgba($color-warning, .8);
+        color: rgba($color-warning, .8);
+    }
+}
+
+.ant-btn-success {
+    border-color: $color-success;
+    color: #fff;
+    background: $color-success;
+
+    &:hover {
+        color: #fff;
+        border-color: rgba($color-success, .8);
+        background: rgba($color-success, .8);
+    }
+}
+
+//select 箭头
+.ant-select .ant-select-arrow {
+    font-size: 10px;
+    top: 45%;
+}
+
+// 搜索框获取焦点 多了个奇怪的阴影
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+    box-shadow: none;
+}
+
+//用户新增样式
+.tooltip-custom {
+    max-width: 90%;
+
+    .ant-tooltip-inner {
+        background-color: #fff;
+        border-color: $color-border;
+        color: $color;
+        box-shadow: 0 2px 8px 0 rgba(0, 35, 114, 0.10);
+        border-radius: 4px;
+    }
+
+    .ant-tooltip-arrow-content {
+        background-color: #DFE1E7;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .tooltip-custom {
+        max-width: 1050px;
+    }
+}
+
+.tooltip-drop {
+    margin-top: 0px;
+    max-width: 90%;
+    // padding-top: 0;
+    .ant-tooltip-arrow{
+        display: none;
+    }
+    .ant-tooltip-inner {
+        background-color: #fff;
+        border-color: rgba($color-primary,.1);
+        color: $color;
+        background: #FFFFFF;
+        box-shadow: 0 0 11px 0 rgba(0,0,0,0.09);
+        border-radius: $radius;
+        padding: 6px 0 0;
+    }
+
+    .ant-tooltip-arrow-content {
+        background-color: #fff;
+    }
+}
+//drawer
+.drawer{
+    .result{
+        margin: -20px -20px 0;//与body间距保持一致
+    }
+    .ant-drawer-content-wrapper{
+        max-width: 1490px;
+        min-width: 1070px;
+    }
+    .ant-drawer-body{
+        padding: 20px;
+    }
+    .ant-drawer-header{
+        background-color: $color-dark;
+        .ant-drawer-title{
+            color: #fff;
+        }
+    }
+    .ant-drawer-close{
+        color: #fff;
+    }
+}
+//form
+.ant-form-item-label>label{
+    color: $color-light;
+}
+.ant-tabs-nav:before{
+    border: none !important;
+}
+.treeCharge_item{
+    display: flex;
+    justify-content: space-between;
+}
+.ant-tree-treenode{
+    width: 100%;
+}

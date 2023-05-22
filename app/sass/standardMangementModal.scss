@@ -1,0 +1,85 @@
+// @import url("../themes/Colors.js");
+@charset "UTF-8";
+.totalbox_{
+    .tabBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+    }
+    .standardBox{
+        display: flex; 
+        width: 100%;
+       
+        li{
+            width: 110px;
+            text-align: center;
+            padding:10px;
+            cursor: pointer;
+        } 
+    }
+}
+.recordDecordPartsdo{
+    display: flex;
+    justify-content: space-around;
+    >a{
+        border-bottom: 1px solid #2b5182;
+        color:#2b5182;
+        // margin-left:20px;
+    }
+}
+.titleContentMessage_{
+    background: #F2F3F5;
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px; 
+    >span{
+        font-weight: 700;
+        font-size: 16px;
+    }
+    span:nth-child(2){
+        // flex:0.42
+        width:300px;
+        padding-left:28px;
+    }
+}
+.totalModalMast{
+    .ant-modal-footer{
+        text-align: center !important;
+    }
+}
+.trueSeeChooseExamine{
+    width: 100%;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    position: relative;
+    padding: 35px 0px;
+}
+.trueSeeChooseExamineOne{
+    float: right;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    padding: 35px 0px;
+}
+.trueSeeChooseExamineTwo{
+    float: right;
+    width: 600px;
+    margin-top: 30px;
+    position: relative;
+    padding: 35px 0px;
+}
+.ant-modal-footer{
+    text-align: center !important;
+}
+.tree .ant-tree-node-content-wrapper{
+    width:100% !important;
+}
+.ant-tree{
+        height: 75vh;
+    overflow: initial;
+}
+.specify .ant-tree {
+    overflow: inherit;
+}

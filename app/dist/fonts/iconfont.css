@@ -1,0 +1,775 @@
+@font-face {
+  font-family: "icon"; /* Project id 2931230 */
+  src: url('iconfont.woff2?t=1671159247048') format('woff2'),
+       url('iconfont.woff?t=1671159247048') format('woff'),
+       url('iconfont.ttf?t=1671159247048') format('truetype');
+}
+
+.icon {
+  font-family: "icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu_marking_subjective_questions:before {
+  content: "\e670";
+}
+
+.icon-menu_marking_experts:before {
+  content: "\e671";
+}
+
+.icon-menu_ra_history:before {
+  content: "\e60d";
+}
+
+.icon-menu_ra_competition_setting:before {
+  content: "\e66e";
+}
+
+.icon-menu_ra_competition_plan:before {
+  content: "\e66f";
+}
+
+.icon-ra_nonferrous_metals:before {
+  content: "\e60b";
+}
+
+.icon-menu_standard_manage_collect:before {
+  content: "\e66a";
+}
+
+.icon-menu_skill_question_bank:before {
+  content: "\e66b";
+}
+
+.icon-menu_computerEmpower:before {
+  content: "\e66d";
+}
+
+.icon-menu_theory_collection:before {
+  content: "\e666";
+}
+
+.icon-expert_platform_client:before {
+  content: "\e667";
+}
+
+.icon-menu_skillCollection:before {
+  content: "\e668";
+}
+
+.icon-menu_standard_collect:before {
+  content: "\e669";
+}
+
+.icon-menu_theoretical_question_bank:before {
+  content: "\e663";
+}
+
+.icon-menu_expert_authorization:before {
+  content: "\e665";
+}
+
+.icon-menu_theorySubject:before {
+  content: "\e638";
+}
+
+.icon-collecting_question_bank:before {
+  content: "\e644";
+}
+
+.icon-onlineExam:before {
+  content: "\e64f";
+}
+
+.icon-expert_team:before {
+  content: "\e662";
+}
+
+.icon-menu_examinDataSummaryManagement:before {
+  content: "\e655";
+}
+
+.icon-menu_SkillTest:before {
+  content: "\eadd";
+}
+
+.icon-menu_examinBasicConfigurationManagement:before {
+  content: "\e652";
+}
+
+.icon-menu_integralScoreRanking:before {
+  content: "\e653";
+}
+
+.icon-menu_screenMonitoring:before {
+  content: "\e654";
+}
+
+.icon-menu_subjectAuthorizationtTheory:before {
+  content: "\e656";
+}
+
+.icon-menu_randomPractice:before {
+  content: "\e657";
+}
+
+.icon-menu_media:before {
+  content: "\e658";
+}
+
+.icon-menu_integralSetting:before {
+  content: "\e659";
+}
+
+.icon-menu_randomStudyStatistics:before {
+  content: "\e65a";
+}
+
+.icon-menu_question_bank_expert:before {
+  content: "\e65b";
+}
+
+.icon-menu_reviewLibrary:before {
+  content: "\e65c";
+}
+
+.icon-menu_examHistoryData:before {
+  content: "\e65d";
+}
+
+.icon-menu_scoreManagement:before {
+  content: "\e65e";
+}
+
+.icon-menu_examManagement:before {
+  content: "\e65f";
+}
+
+.icon-menu_skillSubject:before {
+  content: "\e660";
+}
+
+.icon-menu_examinBatchAssocnManagement:before {
+  content: "\e661";
+}
+
+.icon-menu_recognizeReport:before {
+  content: "\e62b";
+}
+
+.icon-menu_certifiedMonitoring:before {
+  content: "\e634";
+}
+
+.icon-menu_learningExaminee:before {
+  content: "\e643";
+}
+
+.icon-examinationCenter:before {
+  content: "\e627";
+}
+
+.icon-monitoring:before {
+  content: "\e631";
+}
+
+.icon-a-fuxuankuang-xuanzhong1:before {
+  content: "\e650";
+}
+
+.icon-M_biaoqianshi:before {
+  content: "\e651";
+}
+
+.icon-menu_learningResource:before {
+  content: "\e626";
+}
+
+.icon-menu_learningPlan:before {
+  content: "\e628";
+}
+
+.icon-menu_annualManagement:before {
+  content: "\e629";
+}
+
+.icon-menu_previouslyCertified:before {
+  content: "\e62a";
+}
+
+.icon-menu_evaluationLibrary:before {
+  content: "\e62c";
+}
+
+.icon-menu_certSet:before {
+  content: "\e62d";
+}
+
+.icon-menu_invigilatorLibrary:before {
+  content: "\e62e";
+}
+
+.icon-menu_certifiedSupervision:before {
+  content: "\e62f";
+}
+
+.icon-menu_occuCorrespondence:before {
+  content: "\e630";
+}
+
+.icon-menu_computerTest:before {
+  content: "\e632";
+}
+
+.icon-menu_singleIssueCert:before {
+  content: "\e633";
+}
+
+.icon-menu_scopeRange:before {
+  content: "\e637";
+}
+
+.icon-menu_examOccu:before {
+  content: "\e639";
+}
+
+.icon-menu_declarationConditions:before {
+  content: "\e63a";
+}
+
+.icon-menu_workbenchGroup:before {
+  content: "\e63b";
+}
+
+.icon-menu_examPlace:before {
+  content: "\e63c";
+}
+
+.icon-menu_ExternalPlan:before {
+  content: "\e63d";
+}
+
+.icon-menu_cert_replace:before {
+  content: "\e63e";
+}
+
+.icon-menu_examPersonLibrary:before {
+  content: "\e640";
+}
+
+.icon-menu_examineeRevision:before {
+  content: "\e641";
+}
+
+.icon-menu_personLibrary:before {
+  content: "\e642";
+}
+
+.icon-menu_occu:before {
+  content: "\e645";
+}
+
+.icon-menu_specialOperation:before {
+  content: "\e646";
+}
+
+.icon-menu_gradeIdentification:before {
+  content: "\e647";
+}
+
+.icon-menu_costs_set:before {
+  content: "\e648";
+}
+
+.icon-menu_statisticalAnalysis:before {
+  content: "\e649";
+}
+
+.icon-menu_subjectSet:before {
+  content: "\e64a";
+}
+
+.icon-menu_personInquire:before {
+  content: "\e64b";
+}
+
+.icon-menu_onlineStudent:before {
+  content: "\e64c";
+}
+
+.icon-menu_pushDataInternet:before {
+  content: "\e64d";
+}
+
+.icon-menu_supervisionLibrary:before {
+  content: "\e64e";
+}
+
+.icon-menu_retroactive_payment:before {
+  content: "\eadf";
+}
+
+.icon-button_query:before {
+  content: "\e621";
+}
+
+.icon-a-button_reportform:before {
+  content: "\e625";
+}
+
+.icon-button_delete:before {
+  content: "\e61b";
+}
+
+.icon-button_extract:before {
+  content: "\e61c";
+}
+
+.icon-a-button_togrant:before {
+  content: "\e61d";
+}
+
+.icon-button_increase:before {
+  content: "\e61e";
+}
+
+.icon-button_rule:before {
+  content: "\e61f";
+}
+
+.icon-button_more:before {
+  content: "\e622";
+}
+
+.icon-button_edit:before {
+  content: "\e623";
+}
+
+.icon-a-button_newlyadded:before {
+  content: "\e615";
+}
+
+.icon-button_download:before {
+  content: "\e616";
+}
+
+.icon-button_Import:before {
+  content: "\e617";
+}
+
+.icon-a-button_Batchdelete:before {
+  content: "\e618";
+}
+
+.icon-a-Uploadphotos:before {
+  content: "\e619";
+}
+
+.icon-button_export:before {
+  content: "\e61a";
+}
+
+.icon-menu_organ:before {
+  content: "\e611";
+}
+
+.icon-menu_operation:before {
+  content: "\e612";
+}
+
+.icon-menu_role:before {
+  content: "\e613";
+}
+
+.icon-menu_user:before {
+  content: "\e614";
+}
+
+.icon-onlineLearning:before {
+  content: "\e610";
+}
+
+.icon-system:before {
+  content: "\e60f";
+}
+
+.icon-resourceCenter:before {
+  content: "\e60e";
+}
+
+.icon-expertLibrary:before {
+  content: "\e60c";
+}
+
+.icon-basic:before {
+  content: "\e60a";
+}
+
+.icon-kaochang:before {
+  content: "\eadc";
+}
+
+.icon-rending1:before {
+  content: "\ead9";
+}
+
+.icon-shipin:before {
+  content: "\eada";
+}
+
+.icon-shuju:before {
+  content: "\eadb";
+}
+
+.icon-menu_videoControl:before {
+  content: "\eade";
+}
+
+.icon-zip:before {
+  content: "\e741";
+}
+
+.icon-RAR:before {
+  content: "\e620";
+}
+
+.icon-XLSX:before {
+  content: "\e624";
+}
+
+.icon-docdocx:before {
+  content: "\e635";
+}
+
+.icon-Txt:before {
+  content: "\e636";
+}
+
+.icon-pdf:before {
+  content: "\e63f";
+}
+
+.icon-file-gif:before {
+  content: "\e8fb";
+}
+
+.icon-file-jpg:before {
+  content: "\e609";
+}
+
+.icon-f-png:before {
+  content: "\e782";
+}
+
+.icon-menu:before {
+  content: "\e608";
+}
+
+.icon-record:before {
+  content: "\eaba";
+}
+
+.icon-occu:before {
+  content: "\e607";
+}
+
+.icon-role:before {
+  content: "\e606";
+}
+
+.icon-user:before {
+  content: "\e605";
+}
+
+.icon-eye:before {
+  content: "\eab9";
+}
+
+.icon-eye-no:before {
+  content: "\eab8";
+}
+
+.icon-more:before {
+  content: "\eab6";
+}
+
+.icon-kuang1:before {
+  content: "\eab5";
+}
+
+.icon-zuowei:before {
+  content: "\eab4";
+}
+
+.icon-diannao:before {
+  content: "\eab3";
+}
+
+.icon-birthday:before {
+  content: "\eab2";
+}
+
+.icon-check:before {
+  content: "\eab1";
+}
+
+.icon-tuihui1:before {
+  content: "\eab0";
+}
+
+.icon-add1:before {
+  content: "\eaaf";
+}
+
+.icon-wancheng:before {
+  content: "\eaae";
+}
+
+.icon-right-sm:before {
+  content: "\eaad";
+}
+
+.icon-error1:before {
+  content: "\eaac";
+}
+
+.icon-jinxingzhong:before {
+  content: "\eaab";
+}
+
+.icon-tuihui:before {
+  content: "\eaaa";
+}
+
+.icon-close:before {
+  content: "\eaa9";
+}
+
+.icon-menu-open:before {
+  content: "\eaa8";
+}
+
+.icon-shezhi:before {
+  content: "\eaa7";
+}
+
+.icon-jiantou:before {
+  content: "\eaa6";
+}
+
+.icon-gongzuotai:before {
+  content: "\eaa5";
+}
+
+.icon-beian2:before {
+  content: "\eaa4";
+}
+
+.icon-pici:before {
+  content: "\eaa3";
+}
+
+.icon-jigou:before {
+  content: "\eaa2";
+}
+
+.icon-search:before {
+  content: "\eaa1";
+}
+
+.icon-fujian:before {
+  content: "\ea9f";
+}
+
+.icon-dot:before {
+  content: "\ea9e";
+}
+
+.icon-file-word:before {
+  content: "\ea9d";
+}
+
+.icon-left:before {
+  content: "\e664";
+}
+
+.icon-right:before {
+  content: "\e66c";
+}
+
+.icon-top:before {
+  content: "\e727";
+}
+
+.icon-bottom:before {
+  content: "\e728";
+}
+
+.icon-me:before {
+  content: "\ea9c";
+}
+
+.icon-menu-close:before {
+  content: "\ea9a";
+}
+
+.icon-beian1:before {
+  content: "\ea9b";
+}
+
+.icon-tiaoguo:before {
+  content: "\ea98";
+}
+
+.icon-shenhe:before {
+  content: "\ea99";
+}
+
+.icon-tips:before {
+  content: "\ea97";
+}
+
+.icon-kuang:before {
+  content: "\ea96";
+}
+
+.icon-zhuanjia:before {
+  content: "\ea95";
+}
+
+.icon-phone2:before {
+  content: "\ea94";
+}
+
+.icon-logo:before {
+  content: "\ea93";
+}
+
+.icon-card:before {
+  content: "\ea92";
+}
+
+.icon-empty:before {
+  content: "\ea91";
+}
+
+.icon-phone:before {
+  content: "\ea88";
+}
+
+.icon-complete:before {
+  content: "\ea73";
+}
+
+.icon-rending:before {
+  content: "\ea74";
+}
+
+.icon-del:before {
+  content: "\ea75";
+}
+
+.icon-cardId:before {
+  content: "\ea77";
+}
+
+.icon-weizhi:before {
+  content: "\ea78";
+}
+
+.icon-ziyuan:before {
+  content: "\ea79";
+}
+
+.icon-daitijiao:before {
+  content: "\ea7b";
+}
+
+.icon-company:before {
+  content: "\ea7c";
+}
+
+.icon-edit:before {
+  content: "\ea7d";
+}
+
+.icon-home:before {
+  content: "\ea7e";
+}
+
+.icon-beian:before {
+  content: "\ea80";
+}
+
+.icon-person:before {
+  content: "\ea81";
+}
+
+.icon-zhuanxiang:before {
+  content: "\ea83";
+}
+
+.icon-add:before {
+  content: "\ea84";
+}
+
+.icon-xitong:before {
+  content: "\ea85";
+}
+
+.icon-error:before {
+  content: "\ea86";
+}
+
+.icon-upload:before {
+  content: "\ea87";
+}
+
+.icon-gengduo:before {
+  content: "\ea89";
+}
+
+.icon-jiankong:before {
+  content: "\ea8b";
+}
+
+.icon-down:before {
+  content: "\ea8c";
+}
+
+.icon-zhandian:before {
+  content: "\ea8d";
+}
+
+.icon-list:before {
+  content: "\ea8e";
+}
+
+.icon-tongji:before {
+  content: "\ea8f";
+}
+
+.icon-jineng:before {
+  content: "\ea90";
+}
+
+.icon-caret-right:before {
+  content: "\e601";
+}
+
+.icon-caret-left:before {
+  content: "\e602";
+}
+
+.icon-caret-down:before {
+  content: "\e603";
+}
+
+.icon-caret-top:before {
+  content: "\e604";
+}
+

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Noto Sans SC"; /* Project id 2931230 */
+    src:url('../font/NotoSansSC-6.ttf')
+}
+
+@font-face {
+    font-family: "FangSong";
+    src: url('../font/仿宋字体.ttf');
+}

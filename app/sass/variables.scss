@@ -1,0 +1,101 @@
+@charset "UTF-8";
+// 文字颜色
+$color: #333; // 颜色-默认
+
+// 品牌色
+$color-primary: #2B5182; // 颜色-突出
+$color-second: #3D6DAC; // 颜色-突出
+$color-third: #1890FF; // 颜色-突出
+$color-fouth: #548ABE; // 颜色-突出
+
+$color-white: #FFFFFF; // 颜色-白色
+$color-black: #000000; // 颜色-黑色
+$color-primary-light-1: mix($color-white, $color-primary, 10%);
+$color-primary-light-2: mix($color-white, $color-primary, 20%);
+$color-primary-light-3: mix($color-white, $color-primary, 30%);
+$color-primary-light-4: mix($color-white, $color-primary, 40%);
+$color-primary-light-5: mix($color-white, $color-primary, 50%);
+$color-primary-light-6: mix($color-white, $color-primary, 60%);
+$color-primary-light-7: mix($color-white, $color-primary, 70%);
+$color-primary-light-8: mix($color-white, $color-primary, 80%);
+$color-primary-light-9: mix($color-white, $color-primary, 90%);
+
+$color-primary-dark-1: mix($color-black, $color-primary, 10%);
+$color-primary-dark-2: mix($color-black, $color-primary, 20%);
+$color-primary-dark-3: mix($color-black, $color-primary, 30%);
+$color-primary-dark-4: mix($color-black, $color-primary, 40%);
+$color-primary-dark-5: mix($color-black, $color-primary, 50%);
+$color-primary-dark-6: mix($color-black, $color-primary, 60%);
+$color-primary-dark-7: mix($color-black, $color-primary, 70%);
+$color-primary-dark-8: mix($color-black, $color-primary, 80%);
+$color-primary-dark-9: mix($color-black, $color-primary, 90%);
+
+// 需要可启用
+// $color-secondary: $color-primary-light-2; // 颜色-突出-次要
+// $color-hover: $color-primary-light-3; // 颜色-划入
+
+$color-light: #666; // 颜色-浅色
+$color-lighter: #999; // 颜色-浅色-高级
+// $color-lightest: #cacaca; // 颜色-浅色-最高级
+
+$color-dark: #4E5969; //颜色-深色 //
+$color-darker: #111; //颜色-深色-高级
+// $color-darkest: #000; //颜色-深色-最高级
+
+// 功能色
+$color-success: #33B554; // 颜色-成功 // 1BAD40 2AC63E
+$color-error: #F04734; // 颜色-失败 //f5222d
+$color-warning: #FF8B00; // 颜色-警告 //tips
+$color-warning2: #FFD57F; // 颜色-警告 //
+$color-warning3: #FA6601; // 颜色-警告 //
+$color-danger: #FF3B30; // 颜色-危险
+$color-disabled: #eaeded; //颜色-禁用
+$color-price: #f10214; // 颜色-金钱
+
+// 边框色
+$color-border: #D9D9D9; // 边框色
+$color-border-light: #EEE; // 边框-浅色 //E9E9E9
+$color-border-dark: #b3b3b3; // 边框-深色
+
+//背景色
+$bg: #ededed; //背景色-默认
+$bg-light: #F6F6F6; // 背景色-浅色 //
+$bg-dark: #F8FBFD; // 背景色-深色 //
+$bg-dark2: #F2F3F5; // 背景色-深色 //
+
+// 字号
+$size: 14px; // 字号-默认
+$size-lg: 16px; // 字号-大号
+$size-mlg: 18px; // 字号-更大
+$size-blg: 20px; // 字号-最大
+$size-blger: 24px; // 字号-最大
+$size-sm: 12px; // 字体-小号
+
+// 圆角
+$radius: 2px; // 圆角弧度-默认
+$radius-lg: 4px; // 圆角弧度-大
+$radius-sm: 1px; // 圆角弧度-小
+
+// 间距
+$num: 10px; // 间距
+$num-sm: 5px; // 小间距
+$num-mid: 15px; // 大间距
+$num-lg: 20px; // 大间距
+$num-lger: 30px; // 大间距
+$num-lgest: 80px; // 大间距
+
+// 高度
+$height: 32px; //输入框 按钮高度
+$line-height: 20px; //行高
+
+$height-form: 32px; 
+$height-sm: 28px; //form高度-小
+$height-form-sm: 28px; //form高度-小
+$height-form-lg: 40px; //form高度-小
+//form 
+$input-bg: #fff;
+$line-height-form: 20px; //行高
+$padding-base-vertical: calc((#{$height} - #{$line-height-form} - 2)/2); //留白
+$padding-base-vertical-sm: (#{$height-sm} - #{$line-height-form} - 2)/2; //留白
+$padding-base-horizontal: 9px;//留白
+

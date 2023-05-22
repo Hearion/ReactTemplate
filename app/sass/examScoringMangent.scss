@@ -1,0 +1,106 @@
+.modalScrolling{
+    // background-color:#ececec !important;
+}
+.searchStudentParticulr{
+    padding:20px;
+    border-radius: 2px;
+    .searchStudentParticulr-title{
+        display: flex;
+        justify-content: space-between;
+        color: rgba(0, 0, 0, 0.45);
+    }
+    .searchStudentParticulr-titleDown{
+        padding:10px 0px 20px 0px;
+        display: flex;
+        align-items: center;
+        >h2{
+            font-size: 20px;
+            color: #3BA0FF;
+        }
+        >span{
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.45);
+        }
+    }
+}
+.lange{
+    margin:12px 0px !important;
+}
+.searchStudentParticulr-downCardId{
+    padding:20px;
+    .lange{
+        margin:12px 0px !important;
+    }
+    >h2{
+        font-size: 20px;
+        
+    }
+    >p{
+        padding:10px 0px;
+    }
+}
+.echartsPart{
+    margin-left:15px;
+}
+.leftChartsDis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.knowLedge{
+    background-color: #fff;
+    margin-top:15px;
+}
+.planDode{
+    ul{
+        li{
+            padding-bottom:15px;
+        }
+    }
+    >div{
+        padding-bottom:15px;
+    }
+}
+.uploadPart{
+    display: flex;
+    justify-content: space-between;
+    >div:nth-child(2){
+        p{
+            padding-bottom:15px;
+        }
+    }
+}
+.examMessage{
+    >p{
+        // width: 50%;
+        padding-bottom:15px;
+    }
+}
+.speaciyModalPart{
+    display: flex;
+}
+.beforeGrade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #314659;
+    color:#fff;
+}
+.nextGrade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F0F2F5;
+    color:#000;
+}
+.studentGradeScore{
+    padding:10px 0px;
+    justify-content: space-around;
+}
+

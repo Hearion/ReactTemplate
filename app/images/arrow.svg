@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="5px" viewBox="0 0 64 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="增量备案-历史记录" transform="translate(-732.000000, -602.000000)" fill="#2B5182" fill-rule="nonzero">
+            <g id="编组-3" transform="translate(561.000000, 557.000000)">
+                <g id="arrow-2" transform="translate(171.000000, 45.000000)">
+                    <path d="M54,-9.18485099e-16 L64,5 L54,4.999 L54,5 L0,5 L0,4 L53.999,4 L54,-9.18485099e-16 Z" id="arrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
